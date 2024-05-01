@@ -5,8 +5,8 @@ from base64 import b64encode, b64decode
 key = utils.random(secret.SecretBox.KEY_SIZE)
 box = secret.SecretBox(key)
 
-# Your sensitive data
-message = b"Sensitive data that needs to be encrypted"
+# sensitive data that needs to be encrypted
+message = b"Hola, mundo!"
 
 # Encrypt the message
 encrypted = box.encrypt(message)
